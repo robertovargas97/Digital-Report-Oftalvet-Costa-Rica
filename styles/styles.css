@@ -1,0 +1,410 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/*********************Login styles*************/
+
+.login {
+    min-height: 80vh;
+}
+
+#login-logo{
+padding: 20px;
+width: 30%;
+}
+
+.sectionForm {
+    margin-top: 25%;
+}
+
+.block {
+    margin-top: 20%;
+}
+
+.error {
+    color: rgb(189, 0, 0);
+    padding-left: 5%;
+}
+
+.mailError, .passError,.charging,.progress {
+    display: none;
+}
+
+
+/**********************************************/
+
+td {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+h6, h5 {
+    margin-bottom: 10px;
+}
+
+nav .brand-logo {
+    padding-left: 20px;
+}
+
+#drawNotes {
+    max-width: 100%!important;
+    border: none!important;
+    overflow: auto
+}
+
+#drawDiv, #content {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+th p, #tests-title, #r-eye, #lft-eye, #treatment-title, #extra-notes-title, #extra-notes-title, #aditional-for-pacient {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+th p, h4, h6, .bold {
+    font-weight: bold;
+}
+
+textarea, #tests {
+    margin-bottom: 0;
+}
+
+table textarea {
+    text-align: center;
+}
+
+.no-margin {
+    margin: 0px!important;
+}
+
+.top-margin-h {
+    margin-top: 40px;
+}
+
+#main-title {
+    margin: 0;
+    padding: 0;
+}
+
+#logo {
+    display: none;
+}
+
+#info-general, #pacient-tests, #pacient-treatment {
+    margin-bottom: 0;
+}
+
+#pacient-recomendations {
+    margin-bottom: 30px;
+}
+
+#revision-title {
+    margin-bottom: 20px;
+}
+
+#op-multiple, #btn-side {
+    display: none;
+}
+
+#signature {
+    background-position: center center;
+    background-color: rgb(35, 207, 115);
+    background: url("../img/eyes.png");
+    background-repeat: no-repeat!important;
+    background-size: 100%;
+    min-height: 320px!important;
+}
+
+canvas.jSignature {
+    background-color: transparent!important;
+    width: 100%!important;
+    height: 100%!important;
+}
+
+/**************************************Media responsive styles****************************************/
+
+/* Extra large devices (large laptops and desktops, 320px and up) */
+
+@media only screen and (min-width: 320px) {
+    #signature, canvas.jSignature {
+        min-height: 180px!important;
+    }
+    #drawNotes {
+        min-height: 160px!important;
+        max-height: 160px!important;
+        resize: none;
+    }
+    .sectionForm {
+        margin-top: 8%;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 411px and up) */
+
+@media only screen and (min-width: 411px) {
+    #signature, canvas.jSignature {
+        min-height: 198px!important;
+    }
+    #drawNotes {
+        min-height: 180px!important;
+        max-height: 180px!important;
+    }
+    .login {
+        min-height: 70vh;
+    }
+    .sectionForm {
+        margin-top: 15%;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 480px and up) */
+
+@media only screen and (min-width: 480px) {
+    #signature, canvas.jSignature {
+        min-height: 200px!important;
+    }
+    #drawNotes {
+        min-height: 200px!important;
+        max-height: 200px!important;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 568px and up) */
+
+@media only screen and (min-width: 568px) {
+    #signature, canvas.jSignature {
+        min-height: 240px!important;
+    }
+    #logo {
+        display: block;
+    }
+    #drawNotes {
+        min-height: 240px!important;
+        max-height: 240px!important;
+    }
+    #blackColor {
+        margin-top: 15px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 600px and up) */
+
+@media only screen and (min-width: 600px) {
+    #signature, canvas.jSignature {
+        min-height: 290px!important;
+    }
+    #logo {
+        display: block;
+    }
+    #drawNotes {
+        min-height: 290px!important;
+        max-height: 290px!important;
+    }
+    #blackColor {
+        margin-top: 0;
+    }
+    .login {
+        min-height: 80vh;
+    }
+    .sectionForm {
+        margin-top: 40%;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 768px and up) */
+
+@media only screen and (min-width: 768px) {
+    #signature, canvas.jSignature {
+        min-height: 240px!important;
+    }
+    #logo {
+        display: block;
+    }
+    #drawNotes {
+        min-height: 240px!important;
+        max-height: 240px!important;
+    }
+    #blackColor {
+        margin-top: 15px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 800px and up) */
+
+@media only screen and (min-width: 800px) {
+    #signature, canvas.jSignature {
+        min-height: 260px!important;
+    }
+    #logo {
+        display: block;
+    }
+    #drawNotes {
+        min-height: 260px!important;
+        max-height: 260px!important;
+    }
+    .login {
+        min-height: 85vh;
+    }
+    .sectionForm {
+        margin-top: 60%;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1024px and up) */
+
+@media only screen and (min-width: 1024px) {
+    #signature, canvas.jSignature {
+        min-height: 280px!important;
+    }
+    #drawNotes {
+        min-height: 280px!important;
+        max-height: 280px!important;
+    }
+    .login {
+        min-height: 85vh;
+    }
+    .sectionForm {
+        margin-top: 50%;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {
+    #signature, canvas.jSignature {
+        min-height: 340px!important;
+    }
+    #drawNotes {
+        min-height: 340px!important;
+        max-height: 340px!important;
+    }
+    .login {
+        min-height: 78vh;
+    }
+    .sectionForm {
+        margin-top: 25%;
+    }
+    
+}
+
+/* Extra large devices (large laptops and desktops, 1366px and up) */
+
+@media only screen and (min-width: 1366px) {
+    #signature, canvas.jSignature {
+        min-height: 360px!important;
+    }
+    #drawNotes {
+        min-height: 360px!important;
+        max-height: 360px!important;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1480px and up) */
+
+@media only screen and (min-width: 1480px) {
+    #signature, canvas.jSignature {
+        min-height: 450px!important;
+    }
+    #drawNotes {
+        min-height: 450px!important;
+        max-height: 450px!important;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 2000px and up) */
+
+@media only screen and (min-width: 2000px) {
+    #signature, canvas.jSignature {
+        min-height: 500px!important;
+    }
+    #drawNotes {
+        min-height: 500px!important;
+        max-height: 500px!important;
+    }
+}
+
+/*********************Print styles******************************************/
+
+@media print {
+    * {
+        -webkit-print-color-adjust: exact !important;
+        color-adjust: exact !important;
+        font-size: 12px;
+    }
+    @page {
+        margin: 0;
+    }
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    h6, th p {
+        font-weight: bold;
+    }
+    td p, footer p {
+        font-size: 11.5px;
+    }
+    #nav, #print, #top-btn, #btn-side, #opt-multiple, .btn-floating, #line-width, #colors, #btn-limpiar {
+        display: none;
+    }
+    #logo {
+        display: block;
+    }
+    /*********Pacient information**********/
+    #ubication-div {
+        width: 30%;
+        margin-bottom: 0;
+    }
+    #date-div {
+        width: 15%;
+        margin-bottom: 0;
+    }
+    #appoinment-div {
+        width: 55%;
+        margin-bottom: 0;
+    }
+    #pacient-div, #owner-div, #breed-div {
+        width: 20%;
+        margin-bottom: 0;
+    }
+    #weight-div, #age-div {
+        width: 15%;
+        margin-bottom: 0;
+    }
+    /***********************************************/
+    #revision-title, #content, #drawDiv {
+        margin-top: 25px;
+    }
+    #content {
+        width: 55%;
+        margin-bottom: 40px;
+    }
+    #drawDiv {
+        width: 45%;
+        margin-bottom: 40px;
+    }
+    #pacient-conclusion {
+        margin-top: 40px;
+    }
+    #appoinment-div, #pacient-tests, #div-hist, #lft-eye-div, #rgt-eye-div, #tests-title, #treatment-title, #extra-notes-title, #signature, canvas.jSignature {
+        margin-bottom: 0;
+    }
+    /***********Inputs styles**********************/
+    #ubication, #date, #appoinment, #pacient, #age, #owner, #breed, #tests, #r-eye, #lft-eye, #table-text, #weight, #treatment, #recomendations, #aditional {
+        border: none;
+        font-size: 11.5px;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    /**************************************************/
+    #tests {
+        font-size: 11px;
+    }
+    #pacient-tests {
+        page-break-after: always;
+    }
+}
