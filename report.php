@@ -18,8 +18,8 @@
         //SIN NINGUN TIPO DE SEGURIDAD , ES MERAMENTE PRESENTACIÓN
             $mail =  $_POST['mail'];
             $pass = $_POST['pass'];
-            $static_mail = 'dr@mail.com';
-            $static_pass = '1234';
+            $static_mail = 'hgamboab@hotmail.com';
+            $static_pass = 'Mayjop20';
             if(  $mail == $static_mail && $pass == $static_pass){
             echo " 
 
@@ -673,11 +673,11 @@
                 <div class='row'>
                     <div class='col s12 no-margin'>
                         <p class='grey-text text-lighten-4'>Oftalvet Costa
-                            Rica
-                            (oftalmología
-                            veterinaria Costa Rica) Tel: 2253-6303 Fax:
-                            2283-1384 - Centro Comercial Plaza Cristal, José
-                            Ma.Zeledón, Curridabat, San José Costa Rica.</p>
+                        Rica
+                        (oftalmología
+                        veterinaria Costa Rica) Tel: 2253-6303 Fax:
+                        2283-1384 - 400 mts oeste del Centro Comercial Plaza Cristal,
+                        frente a las canchas de fútbol 5 Archivo Nacional. Curridabat , San José.</p>
                     </div>
                 </div>
             </div>

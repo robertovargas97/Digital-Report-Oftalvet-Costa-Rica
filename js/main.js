@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', function () {
             var element = document.getElementById(elementId).value;
             var textError = document.getElementById(errorId);
             var good = false;
-            if (element.length == 0 || element != equalString) { //PONER CORREO
+            if (element.length == 0 || element != equalString) {
                 textError.style.display = 'block';
                 return good
             }
@@ -78,11 +78,11 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         function validateMail() {
-            return validate("mail", "mailError", "dr@mail.com");
+            return validate("mail", "mailError", "hgamboab@hotmail.com");
         }
 
         function validatePass() {
-            return validate("pass", "passError", "1234");
+            return validate("pass", "passError", "Mayjop20");
         }
 
         function validateForm() {
