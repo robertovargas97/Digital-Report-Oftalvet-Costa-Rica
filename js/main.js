@@ -29,16 +29,18 @@ document.addEventListener('DOMContentLoaded', function () {
         });
 
 
-        var side = document.querySelectorAll('.sidenav');
         var instances = M.Sidenav.init(side);
-
+        var side = document.querySelectorAll('.sidenav');
         var printBtn = document.getElementById("print");
+        var mail = document.getElementById("mail");
+        var pass = document.getElementById("pass");
+        var loginForm = document.getElementById("loginForm");
+
         printBtn.addEventListener('click', function () {
             if (window.print) {
                 window.print();
             }
         })
-
 
         window.onscroll = function () {
             // Scroll is the position of the window when user moves the scroll
@@ -103,11 +105,9 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         }
 
-        var mail = document.getElementById("mail");
+
         mail.addEventListener('keyup', validateMail);
-        var pass = document.getElementById("pass");
         pass.addEventListener('keyup', validatePass);
-        var loginForm = document.getElementById("loginForm");
         loginForm.addEventListener('submit', submitForm);
     }
 });

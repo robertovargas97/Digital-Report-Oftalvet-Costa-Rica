@@ -50,7 +50,7 @@ nav .brand-logo {
 #drawNotes {
     max-width: 100%!important;
     border: none!important;
-    overflow: auto
+    overflow: auto!important;
 }
 
 #drawDiv, #content {
