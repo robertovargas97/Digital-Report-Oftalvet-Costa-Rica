@@ -6,9 +6,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
         var printBtn = document.getElementById("print");
 
-        // Scroll is the position of the window when user moves the scroll
-        var scroll = document.documentElement.scrollTop;
-
         var elems = document.querySelectorAll('.fixed-action-btn');
         var instances = M.FloatingActionButton.init(elems, { hoverEnabled: false });
 
@@ -45,13 +42,14 @@ document.addEventListener('DOMContentLoaded', function () {
         })
 
         window.onscroll = function () {
+            // Scroll is the position of the window when user moves the scroll
+            var scroll = document.documentElement.scrollTop;
             
             if (scroll == 0) {
                 this.document.getElementById("op-multiple").style.display = "none";
                 this.document.getElementById("btn-side").style.display = "none";
             }
             else if (scroll > 99) {
-
                 if (screen.width > 1024) {
                     this.document.getElementById("op-multiple").style.display = "block";
                 }
