@@ -4,13 +4,18 @@
         <meta charset='UTF-8'>
         <meta name='viewport' content='width=device-width, initial-scale=1.0'>
         <title>Reporte de caso</title>
+        
         <!-- Compiled and minified CSS -->
-        <link rel='stylesheet'
-            href='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css'>
-        <link href='https://fonts.googleapis.com/icon?family=Material+Icons'
-            rel='stylesheet'>
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css'>
+        <link href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet'>
+        <link rel="stylesheet" href="styles/styles.css">
 
-            <link rel="stylesheet" href="styles/styles.css">
+        <!-- Compiled and minified JavaScript -->
+        <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js'></script>
+        <script src='js/jSignature.min.noconflict.js'></script>
+        <script src='js/main.js'></script>
+
     </head>
     <body>
 
@@ -152,7 +157,7 @@
 
                 <div class='input-field col s12 m4' id='age-div'>
                     <i class='material-icons prefix'>today</i>
-                    <input id='age' type='number' class=''>
+                    <input id='age' type='text' class=''>
                     <label for='age' id='l-age'>Edad</label>
                 </div>
 
@@ -704,13 +709,5 @@
             setTimeout("preventBack()", 0);
             window.onunload = function () { null };
         </script>
-        <!-- Compiled and minified JavaScript -->
-        <script
-            src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
-        <script
-            src='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js'></script>
-        <script src='js/jSignature.min.noconflict.js'></script>
-        <script
-            src='js/main.js'></script>
     </body>
 </html>

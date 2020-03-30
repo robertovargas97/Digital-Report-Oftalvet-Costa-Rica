@@ -1,6 +1,14 @@
 document.addEventListener('DOMContentLoaded', function () {
 
     if (document.getElementById("print")) {
+
+        var side = document.querySelectorAll('.sidenav');
+
+        var printBtn = document.getElementById("print");
+
+        // Scroll is the position of the window when user moves the scroll
+        var scroll = document.documentElement.scrollTop;
+
         var elems = document.querySelectorAll('.fixed-action-btn');
         var instances = M.FloatingActionButton.init(elems, { hoverEnabled: false });
 
@@ -28,14 +36,8 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
 
-
         var instances = M.Sidenav.init(side);
-        var side = document.querySelectorAll('.sidenav');
-        var printBtn = document.getElementById("print");
-        var mail = document.getElementById("mail");
-        var pass = document.getElementById("pass");
-        var loginForm = document.getElementById("loginForm");
-
+   
         printBtn.addEventListener('click', function () {
             if (window.print) {
                 window.print();
@@ -43,9 +45,7 @@ document.addEventListener('DOMContentLoaded', function () {
         })
 
         window.onscroll = function () {
-            // Scroll is the position of the window when user moves the scroll
-            var scroll = document.documentElement.scrollTop;
-
+            
             if (scroll == 0) {
                 this.document.getElementById("op-multiple").style.display = "none";
                 this.document.getElementById("btn-side").style.display = "none";
@@ -63,6 +63,10 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     if (document.getElementById("loginForm")) {
+        var mail = document.getElementById("mail");
+        var pass = document.getElementById("pass");
+        var loginForm = document.getElementById("loginForm");
+
         //Form functions
         function validate(elementId, errorId, equalString) {
             var element = document.getElementById(elementId).value;
@@ -104,7 +108,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 this.submit();
             }
         }
-
 
         mail.addEventListener('keyup', validateMail);
         pass.addEventListener('keyup', validatePass);
